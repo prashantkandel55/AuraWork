@@ -1,0 +1,17 @@
+{
+  "name": "desktop-admin",
+  "version": "1.0.0",
+  "description": "AuraWork admin desktop shell (Electron)",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}

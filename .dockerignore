@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+Dockerfile.api
+Dockerfile.admin
+Dockerfile.employee
+.git
+dist
+coverage
+
