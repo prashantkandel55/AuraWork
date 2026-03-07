@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <img src="logo.png" alt="AuraWork logo" width="120" />
 </p>
 
@@ -66,6 +66,12 @@ See [docs/SELF_HOSTING.md](docs/SELF_HOSTING.md) for full deployment and product
 
 ---
 
+## Contributing
+
+Contributions are welcome. Please read [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines, then open an issue or pull request on the [repository](https://github.com/prashantkandel55/AuraWork).
+
+---
+
 ## Project Structure
 
 ```
@@ -86,4 +92,4 @@ Aurawork/
 
 ## License
 
-MIT
+MIT — see the [repository](https://github.com/prashantkandel55/AuraWork) for full source.
