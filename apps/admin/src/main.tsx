@@ -9,6 +9,7 @@ import { SchedulePage } from './features/schedule/SchedulePage';
 import { TimeAttendancePage } from './features/time-attendance/TimeAttendancePage';
 import { RequestsPage } from './features/requests/RequestsPage';
 import { PayrollPage } from './features/payroll/PayrollPage';
+import { ProfilePage } from './shell/ProfilePage';
 
 const rootElement = document.getElementById('app') as HTMLElement;
 
@@ -23,6 +24,7 @@ ReactDOM.createRoot(rootElement).render(
           <Route path="time-and-attendance" element={<TimeAttendancePage />} />
           <Route path="requests" element={<RequestsPage />} />
           <Route path="payroll" element={<PayrollPage />} />
+          <Route path="profile" element={<ProfilePage />} />
         </Route>
       </Routes>
     </BrowserRouter>
