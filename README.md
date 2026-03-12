@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./demo/logo.png" width="100" alt="AuraWork Logo">
+</p>
+
 # AuraWork 🚀
 
 AuraWork is a premium workforce management suite designed for modern businesses. It features an **Admin Console** for managers to handle scheduling, attendance, and payroll, and a mobile-first **Employee Portal** for staff to track their time, view schedules, and communicate with the team.
