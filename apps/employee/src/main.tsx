@@ -7,6 +7,7 @@ import { AttendancePage } from './screens/AttendancePage';
 import { SchedulePage } from './screens/SchedulePage';
 import { RequestsPage } from './screens/RequestsPage';
 import { ChatPage } from './screens/ChatPage';
+// NavBar is imported inside each screen component
 
 const rootElement = document.getElementById('app') as HTMLElement;
 

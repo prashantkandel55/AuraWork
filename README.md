@@ -1,95 +1,83 @@
-<p align="center">
-  <img src="logo.png" alt="AuraWork logo" width="120" />
-</p>
+# AuraWork 🚀
 
-# AuraWork
-
-**Free, open-source workforce management** — replace paid services like Homebase and 7shifts with a self-hosted platform for scheduling, time tracking, and team communication.
+AuraWork is a premium workforce management suite designed for modern businesses. It features an **Admin Console** for managers to handle scheduling, attendance, and payroll, and a mobile-first **Employee Portal** for staff to track their time, view schedules, and communicate with the team.
 
 ---
 
-## Features
+## ✨ Features
 
-### Employee PWA (Mobile-first)
-- **Clock in/out** — One-tap with location tagging
-- **Schedule** — View shifts and request time off
-- **Shift coverage** — Request and claim coverage for shifts
-- **Group chat** — Real-time messaging with the team
+### 🖥️ Admin Console
+- **Dashboard**: Real-time overview of workforce stats with interactive SVG charts.
+- **Employee Management**: Comprehensive directory with status tracking.
+- **Smart Scheduling**: Interactive week grid with coverage analytics.
+- **Time & Attendance**: Detailed clock-in logs with status filtering (Late/Absent).
+- **Request Management**: Streamlined approval workflow for time-off and swaps.
+- **Automated Payroll**: Period-based breakdown of hours and gross pay.
 
-### Admin Desktop Dashboard
-- **Schedule management** — Drag-and-drop weekly/monthly scheduling
-- **Time & attendance** — View and edit hours for payroll accuracy
-- **Request handling** — Approve or deny time-off and coverage requests
-- **Payroll** — Salaries, tax data, and payroll tracking
-- **Employee oversight** — Directory, profiles, and permissions
-
----
-
-## Tech Stack
-
-| Layer | Stack |
-|-------|-------|
-| Frontend | React, TypeScript, Vite, Tailwind CSS |
-| Admin | React SPA (Electron wrapper available) |
-| Employee | PWA (Add to Home Screen) |
-| Backend | Node.js, NestJS, REST + WebSockets |
-| Database | PostgreSQL, TypeORM |
+### 📱 Employee Portal
+- **Home Hub**: Quick access to shift info and personal stats.
+- **Live Clock**: Precision clock-in/out with real-time elapsed timer.
+- **PWA Ready**: Mobile-first design optimized for home screen installation.
+- **Digital Schedule**: Mini-calendar view of upcoming shifts.
+- **Requests History**: Simple form to submit and track time-off requests.
+- **Team Chat**: Real-time messaging hub for team communication.
 
 ---
 
-## Quick Start
+## 🛠️ Tech Stack
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS, Custom Glassmorphism Design System
+- **Icons**: Custom SVG Components
+- **Charts**: Interactive SVG Visualizations
+- **Typography**: Inter (Google Fonts)
+
+---
+
+## 📸 Screenshots
+
+### Admin App
+| Dashboard Overview | Smart Scheduling |
+|:---:|:---:|
+| ![Dashboard](./screenshots/admin_dashboard.png) | ![Schedule](./screenshots/admin_schedule.png) |
+
+| Time & Attendance | Payroll Management |
+|:---:|:---:|
+| ![Attendance](./screenshots/admin_attendance.png) | ![Payroll](./screenshots/admin_payroll.png) |
+
+### Employee App
+| Home Hub | Live Clock | Team Chat |
+|:---:|:---:|:---:|
+| ![Home](./screenshots/employee_home.png) | ![Clock](./screenshots/employee_attendance.png) | ![Chat](./screenshots/employee_chat.png) |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
-- PostgreSQL (or use Docker)
+- Node.js (v18+)
+- npm
 
-### Local development
-
-```
-npm install
-npm run start:dev --workspace apps/api
-npm run dev --workspace apps/admin
-npm run dev --workspace apps/employee
-```
-
-- **Admin:** http://localhost:5175
-- **Employee PWA:** http://localhost:5176
-- **API:** http://localhost:3000
-
-### Docker (self-hosted)
-
-```
-docker compose up --build
-```
-
-See [docs/SELF_HOSTING.md](docs/SELF_HOSTING.md) for full deployment and production notes.
-
----
-
-## Contributing
-
-Contributions are welcome. Please read [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines, then open an issue or pull request on the [repository](https://github.com/prashantkandel55/AuraWork).
+### Installation
+1. Clone the repository
+   ```bash
+   git clone https://github.com/prashantkandel55/AuraWork.git
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Run Admin App
+   ```bash
+   cd apps/admin
+   npm run dev
+   ```
+4. Run Employee App
+   ```bash
+   cd apps/employee
+   npm run dev
+   ```
 
 ---
 
-## Project Structure
-
-```
-Aurawork/
-├── apps/
-│   ├── api/           # NestJS backend (REST + WebSockets)
-│   ├── admin/         # Admin dashboard (React)
-│   ├── employee/      # Employee PWA (React)
-│   └── desktop-admin/ # Electron wrapper for admin
-├── packages/
-│   └── ui/            # Shared UI components
-├── docs/
-│   └── SELF_HOSTING.md
-└── logo.png
-```
-
----
-
-## License
-
-MIT — see the [repository](https://github.com/prashantkandel55/AuraWork) for full source.
+## 📄 License
+© 2025 AuraWork. All rights reserved.
