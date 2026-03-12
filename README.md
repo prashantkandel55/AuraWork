@@ -51,6 +51,13 @@ AuraWork is a premium workforce management suite designed for modern businesses.
 
 ---
 
+## 🎬 Walkthrough Video
+Check out the full app walkthrough below:
+
+![Project Walkthrough](./demo/aurawork_walkthrough.webp)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
