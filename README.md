@@ -66,31 +66,36 @@ Check out the full app walkthrough below:
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Deployment
 
-### Prerequisites
-- Node.js (v18+)
-- npm
+The AuraWork suite is optimized for deployment on platforms like **Netlify** or **Vercel**.
 
-### Installation
-1. Clone the repository
-   ```bash
-   git clone https://github.com/prashantkandel55/AuraWork.git
-   ```
-2. Install dependencies
-   ```bash
-   npm install
-   ```
-3. Run Admin App
-   ```bash
-   cd apps/admin
-   npm run dev
-   ```
-4. Run Employee App
-   ```bash
-   cd apps/employee
-   npm run dev
-   ```
+### Deploying to Netlify (Recommended)
+You can deploy the Admin and Employee apps as two separate sites:
+
+1. **Connect your GitHub Repository** to Netlify.
+2. **Admin App Settings**:
+   - Base directory: `apps/admin`
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. **Employee App Settings**:
+   - Base directory: `apps/employee`
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+
+### Local Production Preview
+To test the production build locally:
+```bash
+# Admin
+cd apps/admin
+npm run build
+npm run preview
+
+# Employee
+cd apps/employee
+npm run build
+npm run preview
+```
 
 ---
 
