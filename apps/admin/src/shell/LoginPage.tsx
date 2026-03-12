@@ -139,7 +139,7 @@ export const LoginPage: React.FC = () => {
 
           <p className="mt-6 text-center text-xs text-slate-500">
             Employee?{' '}
-            <a href="http://localhost:5174" className="text-emerald-600 font-semibold hover:underline">
+            <a href={import.meta.env.VITE_EMPLOYEE_URL || '#'} className="text-emerald-600 font-semibold hover:underline">
               Access the employee app →
             </a>
           </p>

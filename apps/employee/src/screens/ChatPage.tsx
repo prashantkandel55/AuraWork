@@ -37,7 +37,8 @@ export const ChatPage: React.FC = () => {
 
   useEffect(() => {
     try {
-      const s = io('http://localhost:3000', { timeout: 3000 });
+      const serverUrl = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
+      const s = io(serverUrl, { timeout: 3000 });
       s.on('connect', () => setConnected(true));
       s.on('disconnect', () => setConnected(false));
       s.on('message:new', (msg: ChatItem) => {
